@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jul 13 19:47:35 EEST 2024","Sat Jul 13 19:47:38 EEST 2024","2165","","createSpace","","","","Create space with without name (example #3)",""
+"passed","Sat Jul 13 19:47:33 EEST 2024","Sat Jul 13 19:47:35 EEST 2024","2129","","createSpace","","","","Create space with invalid name datatype (example #2)",""
+"passed","Sat Jul 13 19:47:38 EEST 2024","Sat Jul 13 19:47:40 EEST 2024","2137","","createSpace","","","","User can't create space with the same name",""
+"passed","Sat Jul 13 19:47:31 EEST 2024","Sat Jul 13 19:47:33 EEST 2024","2555","","createSpace","","","","Create space with valid data (example #1)",""
+"passed","Sat Jul 13 19:47:41 EEST 2024","Sat Jul 13 19:47:43 EEST 2024","2228","","getSpacesPositiveCases","","","","User able to get list of spaces for an existing team_id.",""
+"passed","Sat Jul 13 19:47:43 EEST 2024","Sat Jul 13 19:47:45 EEST 2024","2103","","getSpacesPositiveCases","","","","User recieved an error when team id have invalid data type",""

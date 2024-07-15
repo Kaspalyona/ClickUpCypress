@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"caf5b65cf9cec9691cdaaf0656ac7744","name":"createSpace","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}},{"uid":"394a5a96770a52fe00705689195aa378","name":"getSpacesPositiveCases","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
