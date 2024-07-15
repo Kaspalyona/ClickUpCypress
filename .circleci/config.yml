@@ -1,0 +1,32 @@
+version: 2.1
+
+jobs:
+  node-js-job:
+    docker:
+      - image: timbru31/java-node:latest
+    steps:
+      - checkout
+      - run:
+          name: Get access
+          command: cd ClickUpTst && chmod 777  /root
+      - run:
+          name: Update dependencies
+          command: cd ClickUpTst && apt update && apt upgrade -y
+      - run:
+          name: Install libs
+          command: cd ClickUpTst && apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb -y
+      - run:
+          name: Update cypress
+          command: cd ClickUpTst && npm install cypress --save-dev
+      - run:
+          name: install all
+          command: cd ClickUpTst && npm i
+      - run:
+          name: run tests
+          command: cd ClickUpTst && npm run cy:run || true
+      - run:
+          name: generate report
+          command: cd ClickUpTst && npm run allure:report
+      - store_artifacts:
+          path: ClickUpTst/allure-report
+          destination: CypressReport
