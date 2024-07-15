@@ -30,3 +30,8 @@ jobs:
       - store_artifacts:
           path: ClickUpTst/allure-report
           destination: CypressReport
+
+workflows:
+  build-and-test:
+    jobs:
+      - node-js-job
